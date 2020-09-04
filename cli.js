@@ -12,11 +12,10 @@ const program = require('commander');
 //['aix','darwin','freebsd','linux','openbsd','sunos','win32']
 
 program
-  .option('-v, --version', '1.0.4')
-  .version('1.0.4')
+  .version('1.0.5')
   .action(() => {
-    console.log("Welcome to the Kasfy CLI");
-  })
+    console.log("\n \n 🔥 Welcome to the Kasfy CLI  🔥 Version : 1.0.5 🔥\n \n");
+  });
 
 if (process.platform == 'linux') {
   program
