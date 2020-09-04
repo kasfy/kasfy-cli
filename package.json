@@ -1,6 +1,6 @@
 {
  "name": "kasfy",
- "version": "1.0.1",
+ "version": "1.0.3",
  "description": "node js framework for smart back-end",
  "main": "cli.js",
  "bin": {

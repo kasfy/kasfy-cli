@@ -20,4 +20,4 @@ kasfy create AwesomeApp
 # OR
 
 kasfy new AwesomeApp
-```# cli-kasfy
+```
