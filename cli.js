@@ -12,8 +12,8 @@ const program = require('commander');
 //['aix','darwin','freebsd','linux','openbsd','sunos','win32']
 
 program
-  .option('-v, --version', '1.0.3')
-  .version('1.0.3')
+  .option('-v, --version', '1.0.4')
+  .version('1.0.4')
   .action(() => {
     console.log("Welcome to the Kasfy CLI");
   })
