@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const shell = require('shelljs')
+const fs = require('fs');
 
 if (!shell.which('git')) {
   shell.echo('Sorry, this script requires GIT');
@@ -12,10 +13,30 @@ const program = require('commander');
 //['aix','darwin','freebsd','linux','openbsd','sunos','win32']
 
 program
-  .version('1.0.5')
+  .version('1.0.7')
   .action(() => {
-    console.log("\n \n 🔥 Welcome to the Kasfy CLI  🔥 Version : 1.0.5 🔥\n \n");
+    console.log("\n \n 🔥 Welcome to the Kasfy CLI  🔥 Version : 1.0.7 🔥\n \n");
   });
+
+program
+  .command('serve')
+  .alias('dev')
+  .description('✅ Serve the application')
+  .action(() => {
+
+	if (!fs.existsSync('./node_modules'))
+	{
+		console.log("\n ❌ Not Found `node_modules` directory. \n");
+		console.log("\n ❗️ run command: npm install  \n");
+		process.exit(1);
+	}
+
+    const npm = require("npm");
+    npm.load();
+    npm.load(() => npm.run("start"));
+
+  });
+  
 
 if (process.platform == 'linux') {
   program
