@@ -22,7 +22,7 @@ kasfy --version
 
 ```
 
-> Navigate your like path after run this command to create new kasfy project
+### Navigate your like path after run this command to create new kasfy project
 
 ```bash
 kasfy create AwesomeApp   
@@ -30,4 +30,35 @@ kasfy create AwesomeApp
 # OR
 
 kasfy new AwesomeApp
+```
+
+### Kasfy project run
+```bash
+kasfy serve   
+
+# OR
+
+kasfy dev
+```
+
+## File Creation Commands
+
+Create a new controller
+
+```bash
+kasfy make:ctrl <ControllerName>
+
+#OR 
+
+kasfy create:controller <ControllerName>
+```
+
+Create a new migration
+
+```bash
+make:migration <MigrationName>
+
+#OR
+
+create:migration <MigrationName>
 ```
