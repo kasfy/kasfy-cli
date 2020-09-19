@@ -11,4 +11,4 @@
   ███   ▀█▀   ███    █▀   ▄████████▀    ███         ▀█████▀  
   ▀ Author : S.Katheeskumar [https://katheesh.github.io] */
   
-const Kasfy_CLI = require('./lib/info');
+const Kasfy_CLI = require('./lib/kernel');
