@@ -1,6 +1,6 @@
 {
  "name": "kasfy",
- "version": "1.1.9",
+ "version": "1.2.0",
  "description": "node js framework for smart back-end",
  "main": "cli.js",
  "bin": {
@@ -12,7 +12,9 @@
  "author": "katheeskumar [https://github.com/katheesh]",
  "license": "MIT",
  "dependencies": {
+  "chalk": "^4.1.0",
   "commander": "^6.0.0",
+  "figlet": "^1.5.0",
   "fs": "0.0.1-security",
   "inquirer": "^7.3.3",
   "inquirer-s3": "^1.0.1",
